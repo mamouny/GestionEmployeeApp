@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GestionEmployeeApp</RootNamespace>
+    <AssemblyName>GestionEmployeeApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjoutEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutEmployee.Designer.cs">
+      <DependentUpon>AjoutEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs" />
+    <Compile Include="Departement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departement.Designer.cs">
+      <DependentUpon>Departement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_employeesDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_employeesDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjoutEmployee.resx">
+      <DependentUpon>AjoutEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departement.resx">
+      <DependentUpon>Departement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="gestion_employeesDataSet.xsc">
+      <DependentUpon>gestion_employeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet.xss">
+      <DependentUpon>gestion_employeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet1.xsc">
+      <DependentUpon>gestion_employeesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet1.xss">
+      <DependentUpon>gestion_employeesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet2.xsc">
+      <DependentUpon>gestion_employeesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet2.xss">
+      <DependentUpon>gestion_employeesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet3.xsc">
+      <DependentUpon>gestion_employeesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet3.xss">
+      <DependentUpon>gestion_employeesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet4.xsc">
+      <DependentUpon>gestion_employeesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet4.xss">
+      <DependentUpon>gestion_employeesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet5.xsc">
+      <DependentUpon>gestion_employeesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_employeesDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_employeesDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_employeesDataSet5.xss">
+      <DependentUpon>gestion_employeesDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-gens-customer-services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_37128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vente_hlm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47604_g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-267 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-13205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooling-symbol-3318.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-logout-304.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-logout-2857.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-4278.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-button-12017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-add-button-12024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-302 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooling-symbol-33181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooling-symbol-33182.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-9588.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error-10378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-can-10417.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

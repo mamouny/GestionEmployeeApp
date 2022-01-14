@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionEmployeeApp", "GestionEmployeeApp\GestionEmployeeApp.csproj", "{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{7778D508-338C-4708-AF1D-74348986E756}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEF7115-9A71-45A0-AE17-0FBE1DACEB63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C06AB3C4-D6FC-4A91-B187-064CF715DFC5}
+	EndGlobalSection
+EndGlobal
